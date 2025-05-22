@@ -10,5 +10,6 @@ char *chomp(char *str);
 void malloc_str(char ***Str, int a, int b);
 char **make_amida(int number);
 void print_amida(char **Str, char **name, int *ans, int number);
-char **trace_amida(char **Str, int number);
+int trace_amida(char **Str, int j, int *ans, int number);
 int *make_ans(int number);
+void print_ans(char **name, int *ans, int number);

@@ -3,7 +3,7 @@ char **make_amida(int number) {
   char **amida;
   srand(time(NULL));
   malloc_str(&amida, 4 * number, 2 * number + 1);
-  for (int i = 0; i < 4 * number; i++) {
+  for (int i = 0; i < 4 * number - 1; i++) {
     int is_prepoint = 0;
     for (int j = 0; j < 2 * number + 1; j++) {
       if (j % 2 == 1 || (i % 2 == 0 && j % 2 == 1)) {
@@ -20,6 +20,13 @@ char **make_amida(int number) {
       } else {
         amida[i][0] = ' ';
       }
+    }
+  }
+  for (int j = 0; j < 2 * number + 1; j++) {
+    if (j % 2 == 1) {
+      amida[4 * number - 1][j] = point;
+    } else {
+      amida[4 * number - 1][j] = ' ';
     }
   }
   return amida;
