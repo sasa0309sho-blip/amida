@@ -34,8 +34,9 @@ int main(void) {
   }
   print_ans(name, trace_ans, i);
   free(tmp);
-  free_str(name);
-  free_str(amida);
+  free_str(name, MAX_num);
+  free_str(amida, 4 * i);
+  free(trace_ans);
   free(ans);
   return 0;
 }

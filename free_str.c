@@ -1,9 +1,7 @@
 #include "header.h"
-void free_str(char **Str) {
-  int i = 0;
-  while (Str[i] != NULL) {
+void free_str(char **Str, int len) {
+  for (int i = 0; i < len; i++) {
     free(Str[i]);
-    i++;
   }
   free(Str);
 }

@@ -5,7 +5,7 @@
 #define MAX_num 20
 #define point '#'
 #define freq_point 10
-void free_str(char **Str);
+void free_str(char **Str, int len);
 char *chomp(char *str);
 void malloc_str(char ***Str, int a, int b);
 char **make_amida(int number);

@@ -18,6 +18,6 @@ int trace_amida(char **Str, int j, int *ans, int number) {
       now_y++;
     }
   }
-  // free_str(amida);
+  free_str(amida, 4 * number);
   return ans[(now_x - 1) / 2];
 }
