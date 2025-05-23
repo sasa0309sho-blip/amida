@@ -2,9 +2,6 @@
 #include <libc.h>
 #include <stdio.h>
 
-__attribute__((destructor)) static void destructor() {
-  system("leaks -q amida");
-}
 int main(void) {
   printf("名前を入力してください\n");
   char **name;
