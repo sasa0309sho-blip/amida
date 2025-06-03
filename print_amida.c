@@ -1,5 +1,6 @@
 #include "header.h"
 void print_amida(char **Str, char **name, int *ans, int number) {
+  printf("阿弥陀籤\n");
   for (int i = 0; i < 2 * number + 1; i++) {
     if (i % 2 == 0) {
       printf(" ");

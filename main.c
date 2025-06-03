@@ -9,11 +9,6 @@ int main(void) {
   char *tmp;
   tmp = malloc(sizeof(char) * 256);
   int i = 0;
-  /*while (fgets(tmp, 256, stdin) != NULL) {
-    chomp(tmp);
-    strcpy(name[i], tmp);
-    i++;
-  }*/
   while (1) {
     fgets(tmp, 256, stdin);
     if (strcmp(tmp, "\n") == 0)

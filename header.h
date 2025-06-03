@@ -3,8 +3,8 @@
 #include <string.h>
 #include <time.h>
 #define MAX_num 20
-#define point '#'
-#define freq_point 10
+#define point '*'
+#define freq_point 2
 void free_str(char **Str, int len);
 char *chomp(char *str);
 void malloc_str(char ***Str, int a, int b);
